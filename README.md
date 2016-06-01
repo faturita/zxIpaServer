@@ -23,7 +23,7 @@ $ node index.js
 ```
 
 #Operation
-* First you need to generate an IPA bundle signed and archived with [Ad-hoc](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/TestingYouriOSApp/TestingYouriOSApp.html)或者[企业级分发](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingEnterpriseProgramApps/DistributingEnterpriseProgramApps.html) or in-house distribution.
+* First you need to generate an IPA bundle signed and archived with [Ad-hoc](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/TestingYouriOSApp/TestingYouriOSApp.html) or [In-House](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingEnterpriseProgramApps/DistributingEnterpriseProgramApps.html) distribution.
 * Install the CA certificate that is used to host the server on SSL (not a valid production certificate!)
 * Using Safari, input https://ip:port/download on you mobile device.
 * Click on the IPA bundle.
