@@ -1,34 +1,37 @@
-快速生成自签名HTTPS服务器，局域网安装ipa
+Super IPA Server
 
 #Require
 * [nodejs](https://nodejs.org/)
 
-#安装
+#How to use me.
 
 ```
-$ git clone git@github.com:bumaociyuan/zxIpaServer.git
+$ git clone git@github.com:faturita/zxIpaServer.git
 $ cd zxIpaServer
 $ npm install
 ```
 
-#生成自签名证书
+#Certificate generation
 ```
 $ sh generate-certificate.sh
 #input any password
 ```
 
-#启动服务
+#Run the server
 ```
 $ node index.js
 ```
 
-#使用
-* 使用[Ad-hoc](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/TestingYouriOSApp/TestingYouriOSApp.html)或者[企业级分发](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingEnterpriseProgramApps/DistributingEnterpriseProgramApps.html)打包ipa 放到ipas文件夹下
-* 手机使用safari打开 https://ip:port/download 页面点击安装证书，按指示一直点击下一步和完成
-* 点击ipa链接在线安装
+#Operation
+* First you need to generate an IPA bundle signed and archived with [Ad-hoc](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/TestingYouriOSApp/TestingYouriOSApp.html)或者[企业级分发](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/DistributingEnterpriseProgramApps/DistributingEnterpriseProgramApps.html) or in-house distribution.
+* Install the CA certificate that is used to host the server on SSL (not a valid production certificate!)
+* Using Safari, input https://ip:port/download on you mobile device.
+* Click on the IPA bundle.
+* Go to Settings and trust the signing certificate (the certificate issued by Apple for your Apple License).
+* Run the application.
 
 
-#效果图
+#How it look like ?
 ![screeshot](https://cloud.githubusercontent.com/assets/4977911/8761994/82e33fc0-2d9e-11e5-873e-dbf6027f26a5.png)
 
 ![0dd9988f67781c0af2df4456a0328a72](https://cloud.githubusercontent.com/assets/4977911/8762061/5423ef66-2da0-11e5-9bb5-35fb97c424fa.png)

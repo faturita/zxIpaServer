@@ -14,7 +14,7 @@ openssl pkcs12 -export -out myselfsigned.pfx -inkey myselfsigned.key -in myselfs
 
 openssl genrsa -out myCA.key 2048
 
-openssl req -x509 -new -key myCA.key -out myCA.cer -days 730 -subj /CN="ZX Custom CA"
+openssl req -x509 -new -key myCA.key -out myCA.cer -days 730 -subj /CN="Baufest Mobile Custom CA"
 
 openssl genrsa -out mycert1.key 2048
 

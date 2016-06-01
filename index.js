@@ -85,7 +85,7 @@ function itemWithEnv(env) {
 	var timeString = strftime('%F %H:%M', time);
 	return {
 		name: env,
-		description: '   更新: ' + timeString,
+		description: '   Update time: ' + timeString,
 		time: time,
 		ip: ipAddress,
 		port: port,
